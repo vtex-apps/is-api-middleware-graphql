@@ -1,0 +1,49 @@
+enum BoostAction {
+  add
+  remove
+  promote
+  demote
+}
+
+enum BoostType {
+  term
+  id
+  skuId
+  skuEan
+  skuReference
+  productLink
+  product
+  sku
+  productId
+  attribute
+}
+
+type DynamicRule {
+  """
+  Rule action that will be applied to the products
+  """
+  action: BoostAction
+  """
+  Type of identifier
+  """
+  type: BoostType
+  """
+  Value related to the identifier
+  """
+  value: String
+}
+
+input DynamicRuleInput {
+  """
+  Rule action that will be applied to the products
+  """
+  action: BoostAction
+  """
+  Type of identifier
+  """
+  type: BoostType
+  """
+  Value related to the identifier
+  """
+  value: String
+}

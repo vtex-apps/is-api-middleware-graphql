@@ -1,0 +1,27 @@
+"""
+Object that represents a selected facet. For example: {key: color, value: blue}
+"""
+type SelectedFacet {
+  """
+  Facet key
+  """
+  key: String
+  """
+  Facet value
+  """
+  value: String
+}
+
+"""
+Object that represents a selected facet. For example: {key: color, value: blue}
+"""
+input SelectedFacetInput {
+  """
+  Facet key
+  """
+  key: String
+  """
+  Facet value
+  """
+  value: String
+}

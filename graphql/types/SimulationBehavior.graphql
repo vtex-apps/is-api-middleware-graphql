@@ -1,0 +1,17 @@
+"""
+If you want faster searches and do not care about most up to date prices and promotions, use skip value.
+"""
+enum SimulationBehavior {
+  """
+  Ignore simulation calls
+  """
+  SKIP
+  """
+  Calls the simulation only for first party sellers
+  """
+  ONLY1P
+  """
+  Calls the simulation for every single seller
+  """
+  DEFAULT
+}
