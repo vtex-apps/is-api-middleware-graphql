@@ -1,0 +1,27 @@
+{
+  "vendor": "vtex",
+  "name": "intelligent-search-api-middleware-graphql",
+  "version": "0.0.1",
+  "title": "Intelligent Search API Middleware Graphql",
+  "description": "GraphQL shchema for the Intelligent Search API Middleware",
+  "credentialType": "absolute",
+  "builders": {
+    "graphql": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.catalog-api-proxy": "0.x"
+  },
+  "policies": [
+    {
+      "name": "vtex.catalog-api-proxy:catalog-proxy"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
