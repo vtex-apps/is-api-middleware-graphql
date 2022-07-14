@@ -5,13 +5,13 @@ enum SimulationBehavior {
   """
   Ignore simulation calls
   """
-  SKIP
+  skip
   """
   Calls the simulation only for first party sellers
   """
-  ONLY1P
+  only1P
   """
   Calls the simulation for every single seller
   """
-  DEFAULT
+  default
 }
