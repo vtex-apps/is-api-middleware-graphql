@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "is-api-middleware-graphql",
-  "version": "0.0.2",
+  "version": "0.1.0-beta.0",
   "title": "Intelligent Search API Middleware Graphql",
   "description": "GraphQL shchema for the Intelligent Search API Middleware",
   "credentialType": "absolute",
