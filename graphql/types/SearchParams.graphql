@@ -58,3 +58,64 @@ type SearchParams {
   """
   simulationBehavior: SimulationBehavior
 }
+
+input SearchParamsInput {
+  """
+  Search term. It can contain any character
+  """
+  query: String
+  """
+  List of the selected facets
+
+  The order in which the terms appear is not relevant to the search.
+
+  You can also repeat the same `facetKey` several times for different values.
+  """
+  selectedFacets: [SelectedFacetInput]
+  """
+  Sort the result by a criteria
+  """
+  sort: String
+  """
+  Page number
+  """
+  page: Int
+  """
+  Number of items per page
+  """
+  count: Int
+  """
+  If true, uses isAvailablePerSalesChannel_ parameter on query with segment's sales channel. Will override any given salesChannel arg
+  """
+  hideUnavailableItems: Boolean
+  """
+  Indicates how the search-engine will deal with the fullText if there is more than one word. Set `and` if the returned products must have all the words in its metadata or `or` otherwise.
+  """
+  operator: Operator
+  """
+  Indicates how the search engine will correct misspelled words by using fuzzy logic.
+  It can be a number representing the max number of misspelled letters, or the string `auto` suggesting that the search-engine should set this value by itself.
+  """
+  fuzzy: String
+  """
+  As fuzzy and operator, it controls the search state, but it is for general purposes. This field allows the search engines to apply features that are not handled by the other fields.
+  The possible values in this field are defined by each search engine.
+  """
+  searchState: String
+  """
+  If the search has a redirect enabled, this allows (`true`) or not (`false`) the redirect to be used.
+  """
+  allowRedirect: String
+  """
+  Rules for pormoting, demoting, adding or removing products
+  """
+  dynamicRule: String
+  """
+  Indicates the user region. Useful for regionalized accounts.
+  """
+  regionId: String
+  """
+  If you want faster searches and do not care about most up to date prices and promotions, use skip value.
+  """
+  simulationBehavior: SimulationBehavior
+}

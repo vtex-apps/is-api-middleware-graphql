@@ -59,4 +59,6 @@ type Query {
     """
     dynamicRules: [DynamicRuleInput]
   ): SearchParams @cacheControl(scope: PUBLIC, maxAge: SHORT)
+  after(args: AfterInput): ProductSearch
+    @cacheControl(scope: PUBLIC, maxAge: SHORT)
 }
