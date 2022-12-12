@@ -118,4 +118,8 @@ input SearchParamsInput {
   If you want faster searches and do not care about most up to date prices and promotions, use skip value.
   """
   simulationBehavior: SimulationBehavior
+  """
+  Current account locale
+  """
+  locale: String
 }
