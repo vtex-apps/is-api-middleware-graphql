@@ -187,6 +187,8 @@ type SKU {
   variations: [Property]
   attachments: [Attachment] @deprecated(reason: "Use itemMetaData instead")
   estimatedDateArrival: String
+  Color: [String]
+  Size: [String]
 }
 
 type SkuSpecification {
@@ -250,7 +252,7 @@ type Offer {
   """
   List of SKUs for gifts associated with the product
   """
-  giftSkuIds: [String]
+  GiftSkuIds: [String]
   """
   List of gifts associated with the product
   """
