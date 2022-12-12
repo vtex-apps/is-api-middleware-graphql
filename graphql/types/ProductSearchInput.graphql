@@ -182,13 +182,15 @@ input SKUInput {
   unitMultiplier: Float
   kitItems: [KitItemInput]
   images: [ImageInput]
-  videos: [VideoInput]
+  videos: [String]
   sellers: [SellerInput]
   variations: [PropertyInput]
   attachments: [AttachmentInput] @deprecated(reason: "Use itemMetaData instead")
   estimatedDateArrival: String
   Color: [String]
   Size: [String]
+  Cor: [String]
+  Tamanho: [String]
 }
 
 input SkuSpecificationInput {
@@ -332,10 +334,6 @@ input ImageInput {
   imageTag: String
   imageUrl: String
   imageText: String
-}
-
-input VideoInput {
-  videoUrl: String
 }
 
 input SpecificationGroupInput {

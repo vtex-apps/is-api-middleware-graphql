@@ -182,13 +182,15 @@ type SKU {
   unitMultiplier: Float
   kitItems: [KitItem]
   images: [Image]
-  videos: [Video]
+  videos: [String]
   sellers: [Seller]
   variations: [Property]
   attachments: [Attachment] @deprecated(reason: "Use itemMetaData instead")
   estimatedDateArrival: String
   Color: [String]
   Size: [String]
+  Cor: [String]
+  Tamanho: [String]
 }
 
 type SkuSpecification {
