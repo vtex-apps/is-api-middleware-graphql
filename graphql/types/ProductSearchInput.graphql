@@ -7,6 +7,11 @@ input ProductInput {
   Merchandising rule applied to the product
   """
   rule: RuleInput
+  items: [SKUInput]
+}
+
+input SKUInput {
+  itemId: ID
 }
 
 input RuleInput {
