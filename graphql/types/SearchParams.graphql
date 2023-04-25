@@ -57,6 +57,10 @@ type SearchParams {
   If you want faster searches and do not care about most up to date prices and promotions, use skip value.
   """
   simulationBehavior: SimulationBehavior
+  """
+  Used to share ifo between the before and the after middleware. Use it as a string (e.g customPluginInfo = JSON.stringify(data)).
+  """
+  customPluginInfo: String
 }
 
 input SearchParamsInput {

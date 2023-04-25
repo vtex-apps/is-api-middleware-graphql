@@ -28,4 +28,5 @@ input ProductSearchInput {
 input AfterInput {
   searchResult: ProductSearchInput
   params: SearchParamsInput
+  customPluginInfo: String
 }
