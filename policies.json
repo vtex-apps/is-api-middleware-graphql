@@ -1,13 +1,13 @@
 [
   {
-    "name": "resolve-graphql",
-    "description": "Allows access to resolve a graphql request",
+    "name": "adserver-graphql",
+    "description": "Allows access to adserver graphql request",
     "statements": [
       {
         "actions": ["post", "get"],
         "effect": "allow",
         "resources": [
-          "vrn:vtex.is-api-middleware-graphql:{{region}}:{{account}}:{{workspace}}:/_v/graphql"
+          "vrn:vtex.adserver-graphql:{{region}}:{{account}}:{{workspace}}:/_v/graphql"
         ]
       }
     ]
