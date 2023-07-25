@@ -1,9 +1,9 @@
 {
   "vendor": "vtex",
-  "name": "is-api-middleware-graphql",
-  "version": "0.0.2",
-  "title": "Intelligent Search API Middleware Graphql",
-  "description": "GraphQL shchema for the Intelligent Search API Middleware",
+  "name": "adserver-graphql",
+  "version": "0.0.1-beta.0",
+  "title": "Adserver Graphql",
+  "description": "Adserver Graphql",
   "credentialType": "absolute",
   "builders": {
     "graphql": "1.x",

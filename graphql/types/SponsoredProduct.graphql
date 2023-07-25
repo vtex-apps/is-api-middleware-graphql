@@ -1,0 +1,14 @@
+type SponsoredProduct {
+  """
+  Product ID
+  """
+  productId: ID
+  """
+  Merchandising rule applied to the product
+  """
+  rule: Rule
+}
+
+type Rule {
+  id: String
+}

@@ -1,5 +1,5 @@
 type Query {
-  before(
+  sponsoredProducts(
     """
     Search term. It can contain any character
     """
@@ -58,5 +58,5 @@ type Query {
     Rules for pormoting, demoting, adding or removing products
     """
     dynamicRules: [DynamicRuleInput]
-  ): SearchParams @cacheControl(scope: PUBLIC, maxAge: SHORT)
+  ): [SponsoredProduct] @cacheControl(scope: PUBLIC, maxAge: SHORT)
 }

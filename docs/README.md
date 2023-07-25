@@ -1,7 +1,7 @@
-# VTEX Intelligent Search API Middleware Graphql
+# VTEX Adserver Graphql
 
-`vtex.is-api-middleware-graphql` is the Graphql schema for the Intelligent Search Middleware feature.
+`vtex.adserver-graphql` is the Graphql schema for the Adserver feature.
 
-Check the full documentation to learn how to create a middleware for your account.
+Check the full documentation to learn how to create a adserver for your account.
 
 <!-- TODO: add link to the documentation -->
