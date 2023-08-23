@@ -1,5 +1,7 @@
 # VTEX Intelligent Search API Middleware Graphql
 
+⚠️ This repository is deprecated ⚠️
+
 `vtex.is-api-middleware-graphql` is the Graphql schema for the Intelligent Search Middleware feature.
 
 Check the full documentation to learn how to create a middleware for your account.
